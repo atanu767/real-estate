@@ -57,6 +57,7 @@ body {
     line-height: 1.5;
     font-size: 20px;
     background: var(--body-color);
+    overflow-x: hidden;
 
 }
 
@@ -663,7 +664,7 @@ h5,.title-5{
     max-width: 263px;
 }
 .footer-upper-right .mail-input{
-    max-width: 289px;
+    
     height: 51px;
     padding: 17px 17px 20px 30px;
     font-size: 14px;
@@ -677,7 +678,7 @@ h5,.title-5{
     color: var(--primary-color);
 }
 .footer-upper-right .subscribe{
-    max-width: 158px;
+  
     height: 51px;
     
     color: var(--primary-color) !important;
@@ -696,7 +697,7 @@ h5,.title-5{
     background: var(--primary-color);
 }
 .footer-top-title{
-    margin-left: 100px;
+   
     display: block;
 }
 .footer-logo{
@@ -717,6 +718,9 @@ h5,.title-5{
     font-weight: 700;
     color: var(--primary-color);
     
+}
+.footer-phone a:hover{
+    color: var(--card-title-color);
 }
 .footer-span{
         font-size: 22px;
@@ -739,24 +743,25 @@ h5,.title-5{
     font-size: 18px;
     font-weight: 500;
 }
+.footer-nav-links>li>a:hover{
+    border-bottom: 1px solid var(--primary-color);
+}
 .footer-middle-right a{
    
     color: var(--primary-color);
-    margin-left:15.5px;
+   
 }
-.address{
-    margin-left: 33px;
+.footer-middle-right a:hover{
+    color:var(--card-title-color);
 }
-.footer-last-img{
-    gap: 19px;
-    margin-bottom: 19px;
-}
+
+
 .footer-last-img-2{
     gap: 19px;
 }
 .footer-last-img-1 figure{
     max-width: 96px;
-    height: 96px;
+    
     border-radius: 10px;
     overflow: hidden;
 
@@ -797,6 +802,9 @@ h5,.title-5{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.social-links figure:hover{
+    background: var(--blog-btn-color);
 }
 .social-links figure img{
     max-width: 27.27px;
@@ -881,7 +889,7 @@ h5,.title-5{
     }
     .footer-top-title{
         margin-left: 0;
-        margin-right: 40px;
+      
     }
     .footer-upper-left strong, .footer-upper-right strong{
         font-size:28px;
@@ -902,9 +910,7 @@ h5,.title-5{
     .footer-links{
         text-align: center;
     }
-    .footer-top-title{
-        margin-right: 50px;
-    }
+    
 }
 @media(max-width:992px){
     h1{
@@ -948,9 +954,7 @@ h5,.title-5{
     .footer-upper-left strong, .footer-upper-right strong{
         font-size: 25px;
     }
-    .footer-top-title{
-        margin-right: 80px;
-    }
+    
     .get-the-house-main-img{
         max-width: 100%;
     }
@@ -1146,6 +1150,9 @@ h5,.title-5{
     .blog .card figure img{
         width: 100%;
     }
+    .footer-middle-last-img{
+        margin-left: auto;
+    }
    
     
 }
@@ -1239,10 +1246,7 @@ h5,.title-5{
     .footer-upper-left strong, .footer-upper-right strong{
         font-size: 20px;
     }
-     .footer-middle .col-3, .col-2,.col-4{
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
+    
     .footer-middle-left, .footer-links, .footer-middle-right{
         text-align: center;
     }
@@ -1288,6 +1292,7 @@ h5,.title-5{
     }
     .footer-upper-right .subscribe{
         font-size: 16px;
+        margin-left: 0;
     }
     .blog .blog-btn{
         font-size: 18px;
@@ -1310,6 +1315,14 @@ h5,.title-5{
 }
 .banner{
     padding: 80px 0;
+}
+.footer-middle-last-img{
+    margin-bottom:24px;
+}
+.mail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
     
 }
