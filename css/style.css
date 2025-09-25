@@ -67,9 +67,7 @@ body {
     padding: 0 15px;
 }
 
-.row>* {
-    padding: 0 12px !important;
-}
+
 
 h1 {
     font-family: "Syne", sans-serif;
@@ -78,28 +76,28 @@ h1 {
     font-size: 68px;
 }
 
-h2 {
+h2,.title-2{
     font-family: "Syne", sans-serif;
     font-weight: 600;
     line-height: 1.22;
     font-size: 45px;
 }
 
-h3 {
+h3,.title-3{
     font-family: "Syne", sans-serif;
     font-weight: 600;
     line-height: 1.33;
     font-size: 30px;
 }
 
-h4 {
+h4,.title-4{
     font-family: "Syne", sans-serif;
     font-weight: 500;
     line-height: 1.33;
     font-size: 25px;
 }
 
-h5 {
+h5,.title-5{
     font-family: "Syne", sans-serif;
     font-weight: 500;
     line-height: 1.33;
@@ -144,6 +142,10 @@ h5 {
     font-size: 18px;
     font-family: "Syne", sans-serif;
     font-weight: 600;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 .header-btn {
@@ -269,7 +271,7 @@ h5 {
     align-items: center;
     background: var(--primary-color);
     border-radius: 8px;
-    outline: 1px solid var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
     font-family: "Syne", sans-serif;
     font-size: 16px;
@@ -280,7 +282,7 @@ h5 {
 .card-btn-2:hover {
     background: var(--card-title-color);
     color: var(--primary-color);
-    outline: none;
+    border: none;
 
 }
 
@@ -337,7 +339,7 @@ h5 {
     color: var(--card-title-color);
 }
 
-.easiest-title a {
+.easiest-btn{
     padding: 10px 30.5px;
     background: var(--secondary-color);
     font-size: 18px;
@@ -380,6 +382,7 @@ h5 {
     box-shadow: 0 10px 20px 0 rgba(26, 26, 26, .04);
     border-radius: 25px;
     max-width: 336px;
+    
 }
 
 .our-work .card figure {
@@ -401,14 +404,13 @@ h5 {
 
 .arrow {
     max-width: 159px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 !important;
+    
 }
 
 .arrow img {
-    height: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
@@ -564,7 +566,7 @@ h5 {
 }
 
 .testimonial-2-img {
-    max-width: 118.49px;
+    width:135px;
 
 }
 
@@ -660,7 +662,7 @@ h5 {
     display: block;
     max-width: 263px;
 }
-.footer-upper-right input{
+.footer-upper-right .mail-input{
     max-width: 289px;
     height: 51px;
     padding: 17px 17px 20px 30px;
@@ -671,15 +673,13 @@ h5 {
     border: none;
     outline: none;
 }
-.footer-upper-right input::placeholder{
+.footer-upper-right .mail-input::placeholder{
     color: var(--primary-color);
 }
 .footer-upper-right .subscribe{
     max-width: 158px;
     height: 51px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     color: var(--primary-color) !important;
     font-size: 18px;
     font-weight: 600;
@@ -687,6 +687,9 @@ h5 {
     border-radius: 10px;
     margin-left: 9px;
     transition: 0.4s ease-in-out;
+    border: none;
+    outline: none;
+    padding: 14.5px 33.5px;
 }
 .footer-upper-right .subscribe:hover{
     color: var(--card-title-color) !important;
@@ -709,7 +712,7 @@ h5 {
     margin-bottom: 34px;
 }
 .footer-phone a{
-    margin-left: 15px;
+    
     font-size: 18px;
     font-weight: 700;
     color: var(--primary-color);
@@ -720,7 +723,7 @@ h5 {
         font-weight: 700;
         color: var(--primary-color);
         margin-bottom: 15px;
-        display: block;
+        
 }
 .footer-nav-links{
     padding-left: 0;
@@ -758,9 +761,7 @@ h5 {
     overflow: hidden;
 
 }
-.footer-last-span{
-    margin-left: 70px;
-}
+
 
 .footer-bottom{
     padding: 64px 0;
@@ -779,7 +780,7 @@ h5 {
 .footer-bottom-left span a:hover{
     color: var(--card-title-color);
 }
-.footer-bottom-span span{
+.footer-bottom-span .footer-bottom-title{
     font-size: 20px;
     font-weight: 600;
     color: var(--primary-color);
@@ -873,7 +874,7 @@ h5 {
         max-width: 100px;
     }
     .our-work{
-        padding-bottom: 150px;
+        padding-bottom: 100px;
     }
     .explore-card-title{
         font-size: 30px;
@@ -933,15 +934,13 @@ h5 {
         max-width: 50%;
         flex: 0 0 40%;
     }
-    .arrow{
-        max-width: 70px;
-    }
+    
     .our-work .card{
-        max-width: 100%;
+       max-width: 100%;
         margin-bottom: 24px;
     }
     .our-work{
-        padding-bottom: 126px;
+        padding-bottom:80px;
     }
     .explore-card-title{
         font-size: 25px;
@@ -951,6 +950,18 @@ h5 {
     }
     .footer-top-title{
         margin-right: 80px;
+    }
+    .get-the-house-main-img{
+        max-width: 100%;
+    }
+    .get-the-house-main-img img{
+        width: 100%;
+    }
+    .easiest figure{
+        max-width: 100%;
+    }
+    .easiest figure img{
+        width: 100%;
     }
    
 }
@@ -971,16 +982,8 @@ h5 {
     }
 }
 @media(max-width:850px){
-    .easiest .col-6{
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
-    .easiest figure{
-        max-width: 100%;
-    }
-    .easiest figure img{
-        width: 100%;
-    }
+    
+    
     .easiest{
         padding: 50px 0;
     }
@@ -1035,6 +1038,12 @@ h5 {
     .most-view{
         padding: 50px 0;
     }
+    .most-view .card .figure{
+        max-width: 100%;
+    }
+    .most-view .card .figure img{
+        width: 100%;
+    }
     h2{
         font-size:30px;
     }
@@ -1057,11 +1066,16 @@ h5 {
     .our-work{
         padding-bottom: 100px;
     }
-    .explore .col-4{
-        max-width: 50%;
-        flex: 0 0 50%;
-    }
+   .explore .card figure{
+    max-width: 100%;
+   }
+   .explore .card figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
     .explore .card{
+        max-width: 100%;
         margin-bottom: 24px;
     }
     .explore-card-title{
@@ -1075,7 +1089,7 @@ h5 {
         flex: 0 0 50%;
     }
     .testimonial .card{
-        margin-bottom: 24px;
+        max-width: 100%;
     }
     .testimonial{
         padding-bottom: 100px;
@@ -1122,6 +1136,15 @@ h5 {
     }
     .footer-bottom{
         padding: 50px 0;
+    }
+    .our-work{
+        padding-bottom: 50px;
+    }
+    .blog .card figure{
+        max-width: 100%;
+    }
+    .blog .card figure img{
+        width: 100%;
     }
    
     
@@ -1171,16 +1194,8 @@ h5 {
     .our-work{
         padding-bottom:50px;
     }
-    .explore .col-4{
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
-    .explore .card figure{
-        max-width: 100%;
-    }
-    .explore .card{
-        max-width: 100%;
-    }
+    
+    
     .explore{
         padding-bottom: 50px;
     }
@@ -1202,7 +1217,9 @@ h5 {
     }
     .testimonial .card{
         max-width: 100%;
+        margin-bottom: 24px;
     }
+    
    h5{
         font-size: 19px;
     }
