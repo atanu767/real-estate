@@ -970,9 +970,7 @@ h5,.title-5{
    
 }
 @media(max-width:950px){
-     .footer-top-title{
-        margin-right: 100px;
-    }
+
     .footer-bottom .col-6{
         max-width: 100%;
         flex: 0 0 100%;
